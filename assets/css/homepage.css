@@ -25,12 +25,16 @@
 }
 
 .read-more-container {
-  position: relative;
+  position:absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   color: #fff;
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
 }
+
 
 .read-more-container i {
   font-size: 35px;
