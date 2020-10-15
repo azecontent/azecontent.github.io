@@ -58,8 +58,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(46, 52, 64, 0.71);
-  overflow: hidden;
+  
   border-radius: 50%;
   width: 90%;
   display: flex;
