@@ -3,46 +3,35 @@
 
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        {% include head.html %}
+        <title>Bizimlə Əlaqə - AzeContent</title>
+        <link rel="stylesheet" href="../assets/css/contact.css" />
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bizimlə Əlaqə - AzeContent</title>
+    <body>
+        <!-- header section -->
+        <header class="header-section">
+            <div class="header-content">
+                {% include navbar.html %}
+            </div>
+        </header>
 
-  <!-- j-querry  -->
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <!-- fontawesome(icons) -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
-  <!-- styles  -->
-  <link rel="stylesheet" href="../assets/css/common.css" />
-  <link rel="stylesheet" href="../assets/css/contact.css" />
-</head>
+        <!-- header title  -->
+        <div class="title-wrapper">
+            <h1 class="title">Bizimlə Əlaqə</h1>
+            <hr />
+        </div>
 
-<body>
-
-  <!-- header section -->
-  <header class="header-section">
-    <div class="header-content">
-      {% include navbar.html %}
-    </div>
-  </header>
-
-  <!-- header title  -->
-  <div class="title-wrapper">
-    <h1 class="title">Bizimlə Əlaqə</h1>
-    <hr>
-  </div>
-
-  <!-- main section  -->
-  <main class="main-section container">
-    <div class="main-content">
-      <p class="short-desc">
-        Hər hansı təklif, irad və ya istəyiniz var? <br>
-        Buyurun, aşağıdakı mesaj bölməsindən <br>
-        bizimlə əlaqə saxlaya bilərsiniz.
-      </p>
-      <!--<form class="form">
+        <!-- main section  -->
+        <main class="main-section container">
+            <div class="main-content">
+                <p class="short-desc">
+                    Hər hansı təklif, irad və ya istəyiniz var? <br />
+                    Buyurun, aşağıdakı mesaj bölməsindən <br />
+                    bizimlə əlaqə saxlaya bilərsiniz.
+                </p>
+                <!--<form class="form">
         <label class="label" for="full-name">Ad və Soyad</label>
         <input class="input" type="text" placeholder="Ad və Soyad" required />
         <label for="email">Email</label>
@@ -52,151 +41,149 @@
         <button type="submit" class="send-btn">Göndər</button>
       </form>
 	  -->
-	  <div class = "wrapper">
-			<form class="form" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formsubmit.io/send/5ca742bd-a257-40fb-91c3-c7c1cfea1212" method="post">
-			<fieldset id="fs-frm-inputs">
-			<input name="_redirect" type="hidden" id="name" value="https://azecontent.github.io/messages/thank_you.html">
+                <div class="wrapper">
+                    <form class="form" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formsubmit.io/send/5ca742bd-a257-40fb-91c3-c7c1cfea1212" method="post">
+                        <fieldset id="fs-frm-inputs">
+                            <input name="_redirect" type="hidden" id="name" value="https://azecontent.github.io/messages/thank_you.html" />
 
-			<p for="full-name">Ad və Soyad</p>
-			<input type="text" name="name" id="name" placeholder="" required="">
-			<p for="email-address">Email</p>
-			<input type="email" name="_replyto" id="email" placeholder="" required="">
-			<p for="message">Mesaj Mətni</p>
-			<textarea rows="5" name="comment" id="comment" placeholder="" required=""></textarea>
-			<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-			</fieldset>
-			<button type="submit" class="send-btn">Göndər</button>
-			</form>
-	   </div>  
-    </div>
-  </main>
+                            <p for="full-name">Ad və Soyad</p>
+                            <input type="text" name="name" id="name" placeholder="" required="" />
+                            <p for="email-address">Email</p>
+                            <input type="email" name="_replyto" id="email" placeholder="" required="" />
+                            <p for="message">Mesaj Mətni</p>
+                            <textarea rows="5" name="comment" id="comment" placeholder="" required=""></textarea>
+                            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
+                        </fieldset>
+                        <button type="submit" class="send-btn">Göndər</button>
+                    </form>
+                </div>
+            </div>
+        </main>
 
+        {% include footer.html %}
 
-  {% include footer.html %}
-
-  <!-- animation js  -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <!-- script js  -->
-  <script src="../assets/js/script.js"></script>
-</body>
-
+        <!-- animation js  -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- script js  -->
+        <script src="../assets/js/script.js"></script>
+    </body>
 </html>
 
-<style>/* reset */
-	.wrapper {
-  margin-right: auto; /* 1 */
-  margin-left:  auto; /* 1 */
+<style>
+    /* reset */
+    .wrapper {
+        margin-right: auto; /* 1 */
+        margin-left: auto; /* 1 */
 
-  max-width: 860px; /* 2 */
+        max-width: 860px; /* 2 */
 
-  padding-right: 10px; /* 3 */
-  padding-left:  10px; /* 3 */
-}  
-#fs-frm input,
-#fs-frm select,
-#fs-frm textarea,
-#fs-frm fieldset,
-#fs-frm optgroup,
-#fs-frm label,
-#fs-frm #card-element:disabled {
-  font-family: inherit;
-  font-size: 100%;
-  color: inherit;
-  border: none;
-  border-radius: 0;
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-#fs-frm label,
-#fs-frm legend,
-#fs-frm ::placeholder {
-  font-size: .825rem;
-  margin-bottom: .5rem;
-  padding-top: .2rem;
-  display: flex;
-  align-items: baseline;
-}
+        padding-right: 10px; /* 3 */
+        padding-left: 10px; /* 3 */
+    }
+    #fs-frm input,
+    #fs-frm select,
+    #fs-frm textarea,
+    #fs-frm fieldset,
+    #fs-frm optgroup,
+    #fs-frm label,
+    #fs-frm #card-element:disabled {
+        font-family: inherit;
+        font-size: 100%;
+        color: inherit;
+        border: none;
+        border-radius: 0;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+    #fs-frm label,
+    #fs-frm legend,
+    #fs-frm ::placeholder {
+        font-size: 0.825rem;
+        margin-bottom: 0.5rem;
+        padding-top: 0.2rem;
+        display: flex;
+        align-items: baseline;
+    }
 
-/* border, padding, margin, width */
-#fs-frm input,
-#fs-frm select,
-#fs-frm textarea,
-#fs-frm #card-element {
-  border: 1px solid rgba(0,0,0,0.2);
-  background-color: rgba(255,255,255,0.9);
-  padding: .75em 1rem;
-  margin-bottom: 1.5rem;
-}
-#fs-frm input:focus,
-#fs-frm select:focus,
-#fs-frm textarea:focus {
-  background-color: white;
-  outline-style: solid;
-  outline-width: thin;
-  outline-color: gray;
-  outline-offset: -1px;
-}
-#fs-frm [type="text"],
-#fs-frm [type="email"] {
-  width: 100%;
-}
-#fs-frm [type="button"],
-#fs-frm [type="submit"],
-#fs-frm [type="reset"] {
-  width: auto;
-  cursor: pointer;
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-}
-#fs-frm [type="button"]:focus,
-#fs-frm [type="submit"]:focus,
-#fs-frm [type="reset"]:focus {
-  outline: none;
-}
-#fs-frm [type="submit"],
-#fs-frm [type="reset"] {
-  margin-bottom: 0;
-}
-#fs-frm select {
-  text-transform: none;
-}
+    /* border, padding, margin, width */
+    #fs-frm input,
+    #fs-frm select,
+    #fs-frm textarea,
+    #fs-frm #card-element {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 0.75em 1rem;
+        margin-bottom: 1.5rem;
+    }
+    #fs-frm input:focus,
+    #fs-frm select:focus,
+    #fs-frm textarea:focus {
+        background-color: white;
+        outline-style: solid;
+        outline-width: thin;
+        outline-color: gray;
+        outline-offset: -1px;
+    }
+    #fs-frm [type="text"],
+    #fs-frm [type="email"] {
+        width: 100%;
+    }
+    #fs-frm [type="button"],
+    #fs-frm [type="submit"],
+    #fs-frm [type="reset"] {
+        width: auto;
+        cursor: pointer;
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+    }
+    #fs-frm [type="button"]:focus,
+    #fs-frm [type="submit"]:focus,
+    #fs-frm [type="reset"]:focus {
+        outline: none;
+    }
+    #fs-frm [type="submit"],
+    #fs-frm [type="reset"] {
+        margin-bottom: 0;
+    }
+    #fs-frm select {
+        text-transform: none;
+    }
 
-#fs-frm [type="checkbox"] {
-  -webkit-appearance: checkbox;
-  -moz-appearance: checkbox;
-  appearance: checkbox;
-  display: inline-block;
-  width: auto;
-  margin: 0 .5em 0 0 !important;
-}
+    #fs-frm [type="checkbox"] {
+        -webkit-appearance: checkbox;
+        -moz-appearance: checkbox;
+        appearance: checkbox;
+        display: inline-block;
+        width: auto;
+        margin: 0 0.5em 0 0 !important;
+    }
 
-#fs-frm [type="radio"] {
-  -webkit-appearance: radio;
-  -moz-appearance: radio;
-  appearance: radio;
-}
+    #fs-frm [type="radio"] {
+        -webkit-appearance: radio;
+        -moz-appearance: radio;
+        appearance: radio;
+    }
 
-/* address, locale */
-#fs-frm fieldset.locale input[name="city"],
-#fs-frm fieldset.locale select[name="state"],
-#fs-frm fieldset.locale input[name="postal-code"] {
-  display: inline;
-}
-#fs-frm fieldset.locale input[name="city"] {
-  width: 52%;
-}
-#fs-frm fieldset.locale select[name="state"],
-#fs-frm fieldset.locale input[name="postal-code"] {
-  width: 20%;
-}
-#fs-frm fieldset.locale input[name="city"],
-#fs-frm fieldset.locale select[name="state"] {
-  margin-right: 3%;
-}
+    /* address, locale */
+    #fs-frm fieldset.locale input[name="city"],
+    #fs-frm fieldset.locale select[name="state"],
+    #fs-frm fieldset.locale input[name="postal-code"] {
+        display: inline;
+    }
+    #fs-frm fieldset.locale input[name="city"] {
+        width: 52%;
+    }
+    #fs-frm fieldset.locale select[name="state"],
+    #fs-frm fieldset.locale input[name="postal-code"] {
+        width: 20%;
+    }
+    #fs-frm fieldset.locale input[name="city"],
+    #fs-frm fieldset.locale select[name="state"] {
+        margin-right: 3%;
+    }
 </style>
-
