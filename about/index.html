@@ -3,66 +3,59 @@
 
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        {% include head.html %}
+        <link rel="stylesheet" href="../assets/css/about.css" />
+    </head>
 
-<head>
-  {% include head.html %}
-  <link rel="stylesheet" href="../assets/css/about.css" />
-</head>
+    <body>
+        <!-- main-section -->
+        <main class="main-section">
+            <div class="main-content">
+                {% include navbar.html %}
 
-<body>
+                <div class="title-wrapper">
+                    <h1 class="title">Haqqımızda</h1>
+                    <hr />
+                </div>
 
-  <!-- main-section -->
-  <main class="main-section">
-    <div class="main-content">
-	  {% include navbar.html %}
+                <div class="about-container">
+                    <h1 class="about-title">Biz kimik?</h1>
+                    <hr />
+                    <p class="about-text">
+                        “AzeContent” gənclərin inkişafı üçün Azərbaycan dilində lazımi bütün kontentlərin vahid məkanda toplanması üçün yaradılmış onlayn platformadır. Azərbaycan gəncliyi olaraq artıq əsrin deyil, ilin deyil, günün tələbinə
+                        uyğunlaşmağın vacibliyinin fərqindəyik. Ona görə artıq sizinləyik!
+                    </p>
+                </div>
 
-      <div class="title-wrapper">
-        <h1 class="title">Haqqımızda</h1>
-        <hr>
-      </div>
+                <div class="about-container mission-container">
+                    <h1 class="about-title mission-title">Missiyamız</h1>
+                    <hr />
+                    <p class="about-text mission-text">
+                        İnsanları, xüsusilə gəncləri öz dilmizdə olan kontentlərlə təmin etmək, onların inkişafına maneə olan dil əngəlini ortadan götürmək, dillimizi gənclərə daha çox sevdirməkdir. Təkcə yerli gənclər üçün deyil, həmçinin
+                        xaricilər üçün Azərbaycan dilini əlçatan etməkdir. Qısaca ifadə etsək, öz dilimizi inkişaf etdirmək və öz dilimizdə inkişaf etməkdir
+                    </p>
+                </div>
 
-      <div class="about-container">
-        <h1 class="about-title">Biz kimik?</h1>
-        <hr>
-        <p class="about-text">
-          “AzeContent” gənclərin inkişafı üçün Azərbaycan dilində lazımi bütün kontentlərin vahid məkanda toplanması
-          üçün yaradılmış onlayn platformadır. Azərbaycan gəncliyi olaraq artıq əsrin deyil, ilin deyil, günün tələbinə
-          uyğunlaşmağın vacibliyinin fərqindəyik. Ona görə artıq sizinləyik!
-        </p>
-      </div>
+                <div class="about-container vision-container">
+                    <h1 class="about-title vision-title">Vizyonumuz</h1>
+                    <hr />
+                    <p class="about-text vision-text">
+                        - Öz dilimizdə sərhədləri aşmaq, <br />
+                        - Yerli gənclər arasında tanınmaq,<br />
+                        - Reallaşmayan layihələri reallaşdırmaq,<br />
+                        - Ən öncül platformaya çevrilmək,<br />
+                        - Nəhayət, öz yurdumuzu öz dilimizdə inşa etməkdir.
+                    </p>
+                </div>
+            </div>
+        </main>
 
-      <div class="about-container mission-container">
-        <h1 class="about-title mission-title">Missiyamız</h1>
-        <hr>
-        <p class="about-text mission-text">
-          İnsanları, xüsusilə gəncləri öz dilmizdə olan kontentlərlə təmin etmək, onların inkişafına maneə olan dil
-          əngəlini ortadan götürmək, dillimizi gənclərə daha çox sevdirməkdir. Təkcə yerli gənclər üçün deyil, həmçinin
-          xaricilər üçün Azərbaycan dilini əlçatan etməkdir. Qısaca ifadə etsək, öz dilimizi inkişaf etdirmək və öz
-          dilimizdə inkişaf etməkdir
-        </p>
-      </div>
+        {% include footer.html %}
 
-      <div class="about-container vision-container">
-        <h1 class="about-title vision-title">Vizyonumuz</h1>
-        <hr>
-        <p class="about-text vision-text">
-          - Öz dilimizdə sərhədləri aşmaq, <br>
-          - Yerli gənclər arasında tanınmaq,<br>
-          - Reallaşmayan layihələri reallaşdırmaq,<br>
-          - Ən öncül platformaya çevrilmək,<br>
-          - Nəhayət, öz yurdumuzu öz dilimizdə inşa etməkdir.
-        </p>
-      </div>
-
-    </div>
-  </main>
-
- {% include footer.html %}
-
-  <!-- animation js  -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <!-- script js  -->
-  <script src="../assets/js/script.js"></script>
-</body>
-
+        <!-- animation js  -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- script js  -->
+        <script src="../assets/js/script.js"></script>
+    </body>
 </html>
