@@ -67,6 +67,31 @@ hr {
   display: none;
 }
 
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: var(--primary);
+  right: 30px;
+  bottom: 30px;
+  line-height: 45px;
+  text-align: center;
+  z-index: 9999;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /*  menu with dropdown */
 
 .post-links-container {
@@ -123,29 +148,6 @@ hr {
 }
 
 
-/* old menu without dropdown */
-
-/* .menu li {
-  list-style: none;
-  display: inline-block;
-  margin-left: 40px;
-}
-
-.menu li a {
-  display: block;
-  font-size: 18px;
-  text-decoration: none;
-  color: #2E3440;
-  transition: all 0.5s ease;
-  padding-bottom: 3px;
-}
-
-.menu li a:hover {
-  color: var(--secondary);
-  border-bottom: 1px solid var(--secondary);
-} */
-
-
 
 .menu img {
   margin-right: 10px;
@@ -153,10 +155,6 @@ hr {
 
 .menu i {
   margin-left: 10px;
-}
-
-.language {
-  /* float: right; */
 }
 
 
