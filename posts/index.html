@@ -1,1 +1,38 @@
+---
+---
 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include head.html %}
+        <title>Bütün Postlar-AzeContent</title>
+    </head>
+
+    <body>
+        <!-- header section -->
+        <header class="header-section">
+            <div class="header-content">
+                {% include navbar.html %}
+            </div>
+        </header>
+
+        <!-- page title  -->
+        <div class="title-wrapper">
+            <h1 class="title">Bütün Postlar </h1>
+            <hr />
+        </div>
+        <!-- home section -->
+        <section class="home-section container">
+            <div class="home-content">
+                {% for post in site.posts %}  {% include article.html %} {% endfor %}
+            </div>
+        </section>
+
+        {% include footer.html %}
+
+        <!-- animation js  -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- script js  -->
+        <script src="../../assets/js/script.js"></script>
+    </body>
+</html>
