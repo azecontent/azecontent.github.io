@@ -25,9 +25,14 @@
 }
 
 .post-information img {
-  /* width: 518px;
-  height: 343px; */
+  width: 518px;
+  height: 343px;
   margin-bottom: 60px;
+}
+
+.position {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .post-description {
