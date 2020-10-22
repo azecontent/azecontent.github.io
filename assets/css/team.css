@@ -39,7 +39,6 @@
 
 .team-member:hover .team-member-hover {
   display: flex;
-  /* opacity: 0.8; */
 }
 
 .team-member img {
@@ -56,44 +55,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(46, 52, 64, 0.71);
   overflow: hidden;
   border-radius: 50%;
   width: 90%;
 }
-
-/* .team-member-hover {
-  position: absolute;
-  top: 0;
-  left: 21px;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(46, 52, 64, 0.7);
-  border-radius: 50%;
-  width: 90%;
-  display: flex;
-  transition: 1s ease all;
-  overflow: hidden;
-} */
 
 .team-member-hover a {
   text-decoration: none;
 }
 
-
 .hover-text {
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 700;
   color: #fff;
 }
 
 .hover-position {
   font-size: 22px;
   color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
 }
 
 
