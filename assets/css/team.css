@@ -63,17 +63,22 @@
   transition: 1s ease all;
 }
 
+.team-member-hover a {
+  text-decoration: none;
+}
+
 
 .hover-text {
-  font-size: 19px;
-  font-weight: 500;
+  font-size: 25px;
+  font-weight: 600;
   color: #fff;
 }
 
 .hover-position {
-  font-size: 17px;
+  font-size: 22px;
   color: rgba(255, 255, 255, 0.8);
 }
+
 
 .hover-social-media {
   margin-top: 35px;
