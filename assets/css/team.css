@@ -49,6 +49,22 @@
 .team-member-hover {
   position: absolute;
   top: 0;
+  left: 15px;
+  right: 0;
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(46, 52, 64, 0.71);
+  overflow: hidden;
+  border-radius: 50%;
+  width: 90%;
+}
+
+/* .team-member-hover {
+  position: absolute;
+  top: 0;
   left: 21px;
   right: 0;
   bottom: 0;
@@ -62,7 +78,7 @@
   display: flex;
   transition: 1s ease all;
   overflow: hidden;
-}
+} */
 
 .team-member-hover a {
   text-decoration: none;
