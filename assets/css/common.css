@@ -94,7 +94,7 @@ hr {
 
 /*  menu with dropdown */
 
-.post-links-container {
+/* .post-links-container {
   position: relative;
   display: inline-block;
 }
@@ -130,7 +130,66 @@ hr {
   list-style: none;
   display: inline-block;
   margin-left: 40px;
+} */
+
+
+.post-links-container,
+.language-links-container {
+  position: relative;
+  display: inline-block;
 }
+
+.post-links-content {
+  min-width: 160px;
+}
+
+.post-links-content,
+.language-links-content {
+  display: none;
+  position: absolute;
+  background-color: var(--primary);
+  /* min-width: 160px; */
+  left: -40px;
+  z-index: 999;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+
+.language-links-content {
+  min-width: 100px;
+  left: -10px;
+}
+
+.post-link, .language-link {
+  color: var(--secondary);
+  padding: 8px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.language-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-links-content .post-link:hover,
+.language-links-content .language-link:hover {
+  background-color:  #D3D3D3;
+}
+
+.post-links-container:hover .post-links-content,
+.language-links-container:hover .language-links-content {
+  display: block;
+}
+
+.link-li, .post-links-container, .language-links-container {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+
 
 .link{
   display: block;
