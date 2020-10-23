@@ -206,8 +206,6 @@ hr {
   border-bottom: 1px solid var(--secondary);
 }
 
-
-
 .menu img {
   margin-right: 10px;
 }
@@ -222,6 +220,10 @@ hr {
   font-size: 21px;
 }
 
+.en-img {
+  width: 25px;
+  height: 25px;
+}
 
 /* home-section  */
 
