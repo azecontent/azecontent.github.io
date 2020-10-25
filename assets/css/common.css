@@ -525,10 +525,10 @@ hr {
     width: calc(100% - 50px);
     margin: 100px 25px 0 25px;
   }
-  .post-links-content {
+  .post-links-content, .language-links-content {
     background-color: var(--secondary);
   }
-  .post-link {
+  .post-link, .language-link {
     color: var(--primary);
   }
   .post-links-container,
