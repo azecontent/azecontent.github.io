@@ -148,21 +148,19 @@ hr {
   display: none;
   position: absolute;
   background-color: var(--primary);
-  /* min-width: 160px; */
   left: -40px;
   z-index: 999;
-  border-radius: 5px;
-  margin-top: 2px;
 }
 
 .language-links-content {
   min-width: 100px;
-  left: -10px;
+  left: -50px;
 }
+
 
 .post-link, .language-link {
   color: var(--secondary);
-  padding: 8px 15px;
+  padding: 10px 15px;
   text-decoration: none;
   display: block;
 }
@@ -170,7 +168,6 @@ hr {
 .language-link {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .post-links-content .post-link:hover,
@@ -189,16 +186,14 @@ hr {
   margin-left: 40px;
 }
 
-
-
-.link{
+.link {
   display: block;
   font-size: 18px;
   text-decoration: none;
   color: #2E3440;
   transition: all 0.5s ease;
-  padding-bottom: 3px;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 
 .link:hover {
@@ -206,24 +201,27 @@ hr {
   border-bottom: 1px solid var(--secondary);
 }
 
-.menu img {
-  margin-right: 10px;
+.az-img {
+  position: absolute;
+  top: 5px;
+  right: 60px;
 }
 
-.menu i {
-  margin-left: 10px;
+.contact {
+  margin-right: 40px;
 }
-
 
 .menu a i {
-  margin-left: 5px;
+  margin-left: 10px;
   font-size: 21px;
 }
 
 .en-img {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
+
 
 /* home-section  */
 
