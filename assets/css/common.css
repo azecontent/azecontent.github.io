@@ -154,7 +154,7 @@ hr {
 
 .language-links-content {
   min-width: 100px;
-  left: -50px;
+  left: -7px;
 }
 
 
@@ -166,6 +166,7 @@ hr {
 }
 
 .language-link {
+  padding: 7px 15px;
   display: flex;
   align-items: center;
 }
