@@ -201,12 +201,6 @@ hr {
   border-bottom: 1px solid var(--secondary);
 }
 
-.az-img {
-  position: absolute;
-  top: 5px;
-  right: 60px;
-}
-
 .contact {
   margin-right: 40px;
 }
@@ -216,10 +210,13 @@ hr {
   font-size: 21px;
 }
 
+.menu img {
+  margin-right: 10px;
+}
+
 .en-img {
   width: 30px;
   height: 30px;
-  margin-right: 10px;
 }
 
 
