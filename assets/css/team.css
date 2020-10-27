@@ -45,10 +45,9 @@
   width: 90%;
 }
 
-.team-member-hover {
+.team-member-hover, .chairman-hover {
   position: absolute;
   top: 0;
-  left: 15px;
   right: 0;
   bottom: 0;
   display: none;
@@ -58,9 +57,18 @@
   overflow: hidden;
   border-radius: 50%;
   width: 90%;
+  background-color: rgba(46, 52, 64, 0.8);
 }
 
-.team-member-hover a {
+.team-member-hover {
+  left: 15px;
+} 
+
+.chairman-hover {
+  left: 17px;
+}
+
+.team-member-hover a, .chairman-hover a {
   text-decoration: none;
 }
 
