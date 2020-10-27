@@ -37,7 +37,8 @@
   align-items: center;
 }
 
-.team-member:hover .team-member-hover {
+.team-member:hover .team-member-hover,
+.team-member:hover .chairman-hover {
   display: flex;
 }
 
@@ -73,13 +74,13 @@
 }
 
 .hover-text {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   color: #fff;
 }
 
 .hover-position {
-  font-size: 16px;
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.8);
   font-weight: 600;
 }
