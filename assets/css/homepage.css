@@ -1,4 +1,9 @@
 
+:root {
+  --primary: #613CBF;
+  --secondary: #FF8C00;
+}
+
 /* main-section */
 
 .main-section {
@@ -25,16 +30,17 @@
 }
 
 .read-more-container {
-  position:absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  color: #fff;
-  font-size: 20px;
+  position: relative;
   text-transform: uppercase;
   text-align: center;
 }
 
+.read-more-container a {  
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--secondary);
+  text-decoration: none;  
+}
 
 .read-more-container i {
   font-size: 35px;
