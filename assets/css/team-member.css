@@ -102,24 +102,21 @@
   padding: 15px;
 }
 
-.facebook {
+.team-member-facebook {
   font-size: 30px;
-  color: #fff;
   background-color: #1778f2;
   padding: 17px 22px;
 }
 
-.github {
-  color: white;
+.team-member-github {
   background-color: #333;
-  
 }
 
-.linkedin {
+.team-member-linkedin {
   background-color: #2867b2;
 }
 
-.twitter {
+.team-member-twitter {
   background-color: #1DA1F2;;
 }
 
