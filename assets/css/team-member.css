@@ -92,7 +92,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 350px;
+  width: 400px;
 }
 
 .icon {
@@ -219,6 +219,16 @@ transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s,
   .alike-post img {
     height: 240px;
   }
+
+  .icons-content {
+    width: 350px;
+  }
+  .icon {
+    font-size: 30px;
+  }
+  .team-member-facebook {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -247,11 +257,22 @@ transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s,
   .alike-post img {
     height: 240px;
   }
+  .icons-content {
+    width: 300px;
+  }
+  .icon {
+    font-size: 27px;
+    padding: 13px;
+  }
+  .team-member-facebook {
+    font-size: 25px;
+    padding: 14px 18px;
+  }
 }
 
 @media (max-width: 450px) {
   .single-post-content {
-    padding: 0 30px 60px;
+    padding: 0 20px 60px;
   }
   .post-title {
     font-size: 23px;
@@ -278,12 +299,23 @@ transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s,
   .alike-post img {
     height: 200px;
   }
+  .icons-content {
+    width: 270px;
+  }
+  .icon {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .team-member-facebook {
+    font-size: 22px;
+    padding: 12px 16px;
+  }
 }
 
 
 @media (max-width: 350px) {
   .single-post-content {
-    padding: 0 30px 60px;
+    padding: 0 10px 60px;
   }
   .post-title {
     font-size: 21px;
@@ -308,5 +340,16 @@ transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s,
   }
   .alike-post img {
     height: 170px;
+  }
+  .icons-content {
+    width: 250px;
+  }
+  .icon {
+    font-size: 22px;
+    padding: 10px;
+  }
+  .team-member-facebook {
+    font-size: 20px;
+    padding: 11px 15px;
   }
 }
