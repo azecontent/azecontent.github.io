@@ -61,6 +61,11 @@ hr {
   object-fit: contain;
 }
 
+.footer-logo-img {
+  width: 240px;
+  object-fit: contain;
+}
+
 .menu-btn {
   font-size: 23px;
   cursor: pointer;
@@ -334,7 +339,7 @@ hr {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  padding: 0 80px;
+  /* padding: 0 80px; */
 }
 
 .post-subjects ul {
@@ -618,9 +623,9 @@ hr {
 }
 
 @media (max-width: 560px) {
-  .footer-content {
+  /* .footer-content {
     padding: 0 50px;
-  }
+  } */
   .category-content {
     padding: 10px 10px;
   }
@@ -659,9 +664,9 @@ hr {
   .footer-section {
     padding: 50px 0;
   }
-  .footer-content {
+  /* .footer-content {
     padding: 0 20px;
-  }
+  } */
   .category-content {
     padding: 10px 1px;
   }
@@ -716,9 +721,9 @@ hr {
 }
 
 @media (max-width: 350px) {
-  .footer-content {
+  /* .footer-content {
     padding: 0 10px;
-  }
+  } */
   .category-content {
     padding: 10px 0;
   }
