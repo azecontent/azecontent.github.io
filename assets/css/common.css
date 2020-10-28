@@ -334,6 +334,7 @@ hr {
 .footer-content {
   display: flex;
   justify-content: space-between;
+  padding: 0 80px;
 }
 
 .post-subjects ul {
@@ -715,6 +716,9 @@ hr {
 }
 
 @media (max-width: 350px) {
+  .footer-content {
+    padding: 0 10px;
+  }
   .category-content {
     padding: 10px 0;
   }
