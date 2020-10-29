@@ -87,7 +87,7 @@
 
 
 .hover-social-media {
-  margin-top: 35px;
+  margin-top: 20px;
 }
 
 .hover-icons {
@@ -104,6 +104,10 @@
 
 .hover-linkedin {
   background-color: #2867b2;
+}
+
+.hover-youtube {
+  color: #FF0000;
 }
 
 .hover-instagram {
