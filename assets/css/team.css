@@ -108,6 +108,7 @@
 
 .hover-youtube:hover {
   color: #FF0000;
+  transform: scale(1.1);
 }
 
 .hover-instagram {
