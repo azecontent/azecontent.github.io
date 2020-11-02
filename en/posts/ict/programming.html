@@ -3,49 +3,52 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        {% include head.html %}
-        <title>İKT - AzeContent</title>
-    </head>
 
-    <body>
-        <!-- header section -->
-        <header class="header-section">
-            <div class="header-content">
-                {% include navbar.html %}
-            </div>
-        </header>
+<head>
+    {% include head.html %}
+    <title>İCT - AzeContent</title>
+</head>
 
-        <!-- page title  -->
-        <div class="title-wrapper">
-            <h1 class="title">İKT</h1>
-            <hr />
+<body>
+    <!-- header section -->
+    <header class="header-section">
+        <div class="header-content">
+            {% include navbar_en.html %}
         </div>
+    </header>
 
-        <!-- category section -->
-        <section class="category-section container">
-            <div class="category-content">
-                <ul class="category-nav">
-                    <li><a class="option" href="/posts/ict">Ümumi</a></li>
-                    <li><a class="option" href="/posts/ict/programming">Proqramlaşdırma</a></li>
-                    <li><a class="option" href="/posts/ict/excel">Excel</a></li>
-                </ul>
-                <!-- <hr> -->
-            </div>
-        </section>
+    <!-- page title  -->
+    <div class="title-wrapper">
+        <h1 class="title">ICT</h1>
+        <hr />
+    </div>
 
-        <!-- home section -->
-        <section class="home-section container">
-            <div class="home-content">
-                {% for post in site.posts %} {% if post.type == "ikt" and post.categories contains 'proqramlaşdırma' %} {% include article.html %} {% endif %} {% endfor %}
-            </div>
-        </section>
+    <!-- category section -->
+    <section class="category-section container">
+        <div class="category-content">
+            <ul class="category-nav">
+                <li><a class="option" href="/posts/ict">General</a></li>
+                <li><a class="option" href="/posts/ict/programming">Programming</a></li>
+                <li><a class="option" href="/posts/ict/excel">Excel</a></li>
+            </ul>
+            <!-- <hr> -->
+        </div>
+    </section>
 
-        {% include footer.html %}
+    <!-- home section -->
+    <section class="home-section container">
+        <div class="home-content">
+            {% for post in site.posts %} {% if post.type == "ikt" and post.categories contains 'proqramlaşdırma' %}
+            {% include article.html %} {% endif %} {% endfor %}
+        </div>
+    </section>
 
-        <!-- animation js  -->
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <!-- script js  -->
-        <script src="../../assets/js/script.js"></script>
-    </body>
+    {% include footer_en.html %}
+
+    <!-- animation js  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- script js  -->
+    <script src="../../assets/js/script.js"></script>
+</body>
+
 </html>

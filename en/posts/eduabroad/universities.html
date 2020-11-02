@@ -3,51 +3,55 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        {% include head.html %}
-        <title>Xaricdə Təhsil - AzeContent</title>
-    </head>
 
-    <body>
-        <!-- header section -->
-        <header class="header-section">
-            <div class="header-content">
-                {% include navbar.html %}
-            </div>
-        </header>
+<head>
+    {% include head.html %}
+    <title>Eduabroad - AzeContent</title>
+</head>
 
-        <!-- page title  -->
-        <div class="title-wrapper">
-            <h1 class="title">Xaricdə Təhsil</h1>
-            <hr />
+<body>
+    <!-- header section -->
+    <header class="header-section">
+        <div class="header-content">
+            {% include navbar_en.html %}
         </div>
+    </header>
 
-        <!-- category section -->
-        <section class="category-section container">
-            <div class="category-content">
-                <ul class="category-nav">
-                    <li><a class="option" href="/posts/eduabroad">Ümumi</a></li>
-                    <li><a class="option" href="/posts/eduabroad/exams">İmtahanlar</a></li>
-                    <li><a class="option" href="/posts/eduabroad/countries">Ölkələr</a></li>
-                    <li><a class="option" href="/posts/eduabroad/scholarships">Təqaüdlər</a></li>
-                    <li><a class="option" href="/posts/eduabroad/universities">Universitetlər</a></li>
-                </ul>
-                <!-- <hr> -->
-            </div>
-        </section>
+    <!-- page title  -->
+    <div class="title-wrapper">
+        <h1 class="title">Eduabroad</h1>
+        <hr />
+    </div>
 
-        <!-- home section -->
-        <section class="home-section container">
-            <div class="home-content">
-                {% for post in site.posts %} {% if post.type == "xaricdə_təhsil" and post.categories contains 'universitetlər' %} {% include article.html %} {% endif %} {% endfor %}
-            </div>
-        </section>
+    <!-- category section -->
+    <section class="category-section container">
+        <div class="category-content">
+            <ul class="category-nav">
+                <li><a class="option" href="/posts/eduabroad">General</a></li>
+                <li><a class="option" href="/posts/eduabroad/exams">Exams</a></li>
+                <li><a class="option" href="/posts/eduabroad/countries">Countries</a></li>
+                <li><a class="option" href="/posts/eduabroad/scholarships">Scholarships</a></li>
+                <li><a class="option" href="/posts/eduabroad/universities">Universites</a></li>
+            </ul>
+            <!-- <hr> -->
+        </div>
+    </section>
 
-        {% include footer.html %}
+    <!-- home section -->
+    <section class="home-section container">
+        <div class="home-content">
+            {% for post in site.posts %}
+            {% if post.type == "xaricdə_təhsil" and post.categories contains 'universitetlər' %}
+            {% include article.html %} {% endif %} {% endfor %}
+        </div>
+    </section>
 
-        <!-- animation js  -->
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <!-- script js  -->
-        <script src="../../assets/js/script.js"></script>
-    </body>
+    {% include footer_en.html %}
+
+    <!-- animation js  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- script js  -->
+    <script src="../../assets/js/script.js"></script>
+</body>
+
 </html>

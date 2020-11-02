@@ -3,51 +3,54 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        {% include head.html %}
-        <title>Ədəbiyyat - AzeContent</title>
-    </head>
 
-    <body>
-        <!-- header section -->
-        <header class="header-section">
-            <div class="header-content">
-                {% include navbar.html %}
-            </div>
-        </header>
+<head>
+    {% include head.html %}
+    <title>Literature - AzeContent</title>
+</head>
 
-        <!-- page title  -->
-        <div class="title-wrapper">
-            <h1 class="title">Ədəbiyyat</h1>
-            <hr />
+<body>
+    <!-- header section -->
+    <header class="header-section">
+        <div class="header-content">
+            {% include navbar_en.html %}
         </div>
+    </header>
 
-        <!-- category section -->
-        <section class="category-section container">
-            <div class="category-content">
-                <ul class="category-nav">
-                    <li><a class="option" href="/posts/literature/">Ümumi</a></li>
-                    <li><a class="option" href="/posts/literature/tales">Nağıllar</a></li>
-                    <li><a class="option" href="/posts/literature/stories">Hekayələr</a></li>
-                    <li><a class="option" href="/posts/literature/books">Kitablar</a></li>
-                    <li><a class="option" href="/posts/literature/poems">Şeirlər</a></li>
-                </ul>
-                <!-- <hr> -->
-            </div>
-        </section>
+    <!-- page title  -->
+    <div class="title-wrapper">
+        <h1 class="title">Literature</h1>
+        <hr />
+    </div>
 
-        <!-- home section -->
-        <section class="home-section container">
-            <div class="home-content">
-                {% for post in site.posts %} {% if post.type == "ədəbiyyat" and post.categories contains 'kitablar' %} {% include article.html %} {% endif %} {% endfor %}
-            </div>
-        </section>
+    <!-- category section -->
+    <section class="category-section container">
+        <div class="category-content">
+            <ul class="category-nav">
+                <li><a class="option" href="/posts/literature/">General</a></li>
+                <li><a class="option" href="/posts/literature/tales">Tales</a></li>
+                <li><a class="option" href="/posts/literature/stories">Stories</a></li>
+                <li><a class="option" href="/posts/literature/books">Books</a></li>
+                <li><a class="option" href="/posts/literature/poems">Poems</a></li>
+            </ul>
+            <!-- <hr> -->
+        </div>
+    </section>
 
-        {% include footer.html %}
+    <!-- home section -->
+    <section class="home-section container">
+        <div class="home-content">
+            {% for post in site.posts %} {% if post.type == "ədəbiyyat" and post.categories contains 'kitablar' %}
+            {% include article.html %} {% endif %} {% endfor %}
+        </div>
+    </section>
 
-        <!-- animation js  -->
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <!-- script js  -->
-        <script src="../../assets/js/script.js"></script>
-    </body>
+    {% include footer_en.html %}
+
+    <!-- animation js  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- script js  -->
+    <script src="../../assets/js/script.js"></script>
+</body>
+
 </html>
