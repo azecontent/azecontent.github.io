@@ -3,53 +3,49 @@
 
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        {% include head.html %}
+        <title>İKT - AzeContent</title>
+    </head>
 
-<head>
-    {% include head.html %}
-    <title>İKT - AzeContent</title>
-</head>
+    <body>
+        <!-- header section -->
+        <header class="header-section">
+            <div class="header-content">
+                {% include navbar.html %}
+            </div>
+        </header>
 
-<body>
-    <!-- header section -->
-    <header class="header-section">
-        <div class="header-content">
-            {% include navbar.html %}
+        <!-- page title  -->
+        <div class="title-wrapper">
+            <h1 class="title">İKT</h1>
+            <hr />
         </div>
-    </header>
 
-    <!-- page title  -->
-    <div class="title-wrapper">
-        <h1 class="title">İKT</h1>
-        <hr />
-    </div>
+        <!-- category section -->
+        <section class="category-section container">
+            <div class="category-content">
+                <ul class="category-nav">
+                    <li><a class="option" href="/posts/ict">Ümumi</a></li>
+                    <li><a class="option" href="/posts/ict/programming">Proqramlaşdırma</a></li>
+                    <li><a class="option selected" href="/posts/ict/excel">Excel</a></li>
+                </ul>
+                <!-- <hr> -->
+            </div>
+        </section>
 
-    <!-- category section -->
-    <section class="category-section container">
-        <div class="category-content">
-            <ul class="category-nav">
-                <li><a class="option" href="/posts/ict">Ümumi</a></li>
-                <li><a class="option" href="/posts/ict/programming">Proqramlaşdırma</a></li>
-                <li><a class="option" style=" color: var(--primary);
-                        border-bottom: 3px solid var(--primary);" href="/posts/ict/excel">Excel</a></li>
-            </ul>
-            <!-- <hr> -->
-        </div>
-    </section>
+        <!-- home section -->
+        <section class="home-section container">
+            <div class="home-content">
+                {% for post in site.posts %} {% if post.type == "ikt" and post.categories contains 'excel' %} {% include article.html %} {% endif %} {% endfor %}
+            </div>
+        </section>
 
-    <!-- home section -->
-    <section class="home-section container">
-        <div class="home-content">
-            {% for post in site.posts %} {% if post.type == "ikt" and post.categories contains 'excel' %}
-            {% include article.html %} {% endif %} {% endfor %}
-        </div>
-    </section>
+        {% include footer.html %}
 
-    {% include footer.html %}
-
-    <!-- animation js  -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- script js  -->
-    <script src="../../assets/js/script.js"></script>
-</body>
-
+        <!-- animation js  -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- script js  -->
+        <script src="../../assets/js/script.js"></script>
+    </body>
 </html>
