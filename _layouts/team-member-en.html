@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include head.html %}
+  <title>Out Team - AzeContent</title>
+  <link rel="stylesheet" href="../../assets/css/team-member.css" />
+</head>
+
+<body>
+  <!-- header section -->
+  <header class="header-section">
+    <div class="header-content">
+      {% include navbar_en.html %}
+    </div>
+  </header>
+
+  <!-- single-post section -->
+  <div class="container">
+    <section class="single-post-section">
+      <div class="single-post-content">
+        <div class="post-information">
+          <h1 class="title post-title" style="text-transform: capitalize;">{{page.fullname}}</h1>
+          <p class="position">{{page.position}}</p>
+          <img src="../../assets/images/teamimg/{{page.background}}" alt="" />
+          <p class="post-description">
+            {{content}}
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  {% include footer_en.html %}
+
+  <!-- animation js  -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- script js  -->
+  <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>
