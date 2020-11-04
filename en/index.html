@@ -17,8 +17,8 @@
     <div class="main-content">
       {% include navbar_en.html %}
       <h1 class="main-title">
-        Let's develop <br />
-        in our own <br />
+        Let's <br />
+        develop in our <br />
         language!
       </h1>
 
@@ -114,7 +114,7 @@
       dataType: "json",
       contentType: "application/json; charset=utf-8",
       error: function (err) {
-        alert("Serverə qoşulmaq mümkün olmadı. Xahiş edirik bir az sonra təkrar cəhd edin.");
+        alert("Could not connect to server. Please try again later");
       },
       success: function (data) {
         $("#mc-embedded-subscribe").val("Abunə Olun");
@@ -123,7 +123,7 @@
           console.log(data.msg);
           $("#mce-EMAIL").css("borderColor", "#ffffff");
           $("#subscribe-result").css("color", "rgb(247, 147, 30)");
-          $("#subscribe-result").html("Abunə olduğunuz üçün təşəkkür edirik!");
+          $("#subscribe-result").html("Thank you for subscribing!");
           $("#mce-EMAIL").val("");
         } else {
           // Something went wrong, do something to notify the user.
@@ -134,10 +134,10 @@
           $("#subscribe-result").css("color", "#ff8282");
           if (data.msg.includes("Artıq")) {
             $("#subscribe-result").css("color", "rgb(247, 147, 30)");
-            $("#subscribe-result").html("Siz artıq abunə olmusunuz.");
+            $("#subscribe-result").html("You have already subscribed.");
           } else {
             $("#subscribe-result").css("color", "rgb(255,0,0)");
-            $("#subscribe-result").html("Qeyd edilmiş email ünvanı səhvdir");
+            $("#subscribe-result").html("The email address provided is incorrect");
           }
         }
       },
