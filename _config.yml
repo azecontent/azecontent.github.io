@@ -1,2 +1,7 @@
+google_analytics:   UA-172962727-1
 
+url: https://azecontent.com
+
+plugins:
+  - jekyll-sitemap
 
