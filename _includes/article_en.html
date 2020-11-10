@@ -1,0 +1,19 @@
+<div class="post">
+
+  {% if post.video_link  %}
+  <img class="post-img" src="https://img.youtube.com/vi/{{post.video_link}}/mqdefault.jpg">
+  {% else %}
+  <img class="post-img" src="{{post.background}}">
+  {% endif %}
+
+  <div class="post-info">
+    <h4 class="post-title">{{post.title}}</h4>
+    <p class="post-description">
+
+    </p>
+    <div class="post-row">
+      <p class="post-date">{{ post.date | date: '%m.%d.%Y' }}</p>
+      <a href="{{post.url}}" class="read-btn">More...</a>
+    </div>
+  </div>
+</div>
