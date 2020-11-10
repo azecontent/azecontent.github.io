@@ -38,7 +38,7 @@
         <!-- home section -->
         <section class="home-section container">
             <div class="home-content">
-                {% assign cnt1 = 0 %} {% for post in site.posts %} {% if post.selected %} {% assign cnt1 = cnt1 | plus: 1 %} {% include article.html %} {% if cnt1 == 12 %} {% break %} {% endif %} {% endif %} {% endfor %}
+                {% assign cnt1 = 0 %} {% for post in site.posts %} {% if post.selected %} {% assign cnt1 = cnt1 | plus: 1 %} {% include article_en.html %} {% if cnt1 == 12 %} {% break %} {% endif %} {% endif %} {% endfor %}
             </div>
         </section>
 
