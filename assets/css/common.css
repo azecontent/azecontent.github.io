@@ -164,6 +164,13 @@ hr {
   margin-bottom: 5px;
 }
 
+.lang-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40px;
+}
+
 .link:hover {
   color: var(--secondary);
   border-bottom: 1px solid var(--secondary);
