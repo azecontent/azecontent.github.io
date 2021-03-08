@@ -11,7 +11,7 @@
   width: calc(100% - 20px);
   row-gap: 90px;
   grid-template-columns: repeat(2, 1fr);
-  margin: 150px 30px;
+  margin: 70px 30px;
   padding: 0 120px;
 }
 
@@ -22,7 +22,7 @@
   width: calc(100% - 20px);
   row-gap: 90px;
   grid-template-columns: repeat(3, 1fr);
-  margin: 150px 16px;
+  margin: 100px 16px;
 }
 
 .team-member {
