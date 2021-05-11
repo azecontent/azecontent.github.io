@@ -272,5 +272,13 @@ transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s,
   }
 }
 
+/* singlepost responsive */
 
+.embed-responsive{
+  width: 100% !important;
+  max-height:75vh!important;
+}
 
+iframe{
+  max-height:75vh!important
+}
